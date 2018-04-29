@@ -51,6 +51,7 @@ class Programa {
         func1.rg = "00.000.000-0";
         func1.salario = 1500.00;
         func1.estaNaEmpresa = true;
+        abc.adicionaFuncionario(func1);
 
         Funcionario func2 = new Funcionario();
         func2.nome = "Maria";
@@ -59,8 +60,6 @@ class Programa {
         func2.rg = "00.000.000-0";
         func2.salario = 2500.00;
         func2.estaNaEmpresa = true;
-
-        abc.adicionaFuncionario(func1);
         abc.adicionaFuncionario(func2);
         
         for(Funcionario arrayFuncs : abc.arrayFuncionarios) {
