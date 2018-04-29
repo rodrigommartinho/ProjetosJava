@@ -49,13 +49,21 @@ class Programa {
         arrayFilmes[3] = filme4;
         arrayFilmes[4] = filme5;
 
-        for (int i = 0; i < 5; i++) {
+        /*for (int i = 0; i < arrayFilmes.length; i++) {
             System.out.println("Objeto::" + arrayFilmes[i]);
             System.out.println("Codigo::" + arrayFilmes[i].codigo);
             System.out.println("Nome::" + arrayFilmes[i].nome);
             System.out.println("Valor::" + arrayFilmes[i].valor);
             System.out.println("----------------");
-        }
+        }*/
 
+        //Laço Encadeado, lançado a partir do Java 5
+        for (Filme encadeadoFilme : arrayFilmes) {
+            System.out.println("Objeto::" + encadeadoFilme);
+            System.out.println("Codigo::" + encadeadoFilme.codigo);
+            System.out.println("Nome::" + encadeadoFilme.nome);
+            System.out.println("Valor::" + encadeadoFilme.valor);
+            System.out.println("----------------");
+        }
     }
 }
